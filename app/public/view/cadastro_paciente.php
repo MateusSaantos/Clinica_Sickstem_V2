@@ -28,7 +28,7 @@ require_once __DIR__ . '/head/head.php';
 					<div class="row align-items-center">
 						<div class="header-text mb-4 ">
 							<h2>Cadastro de Paciente</h2><br>
-							<form method="post" action="processa_cadastro_paciente.php">
+							<form method="post" action="/sickstem/app/src/controller/paciente/create_paciente.php">
 								<div class="form-row">
 									<div class="form-group">
 										<label for="cpf">CPF:</label>
@@ -89,40 +89,12 @@ require_once __DIR__ . '/head/head.php';
 				</div>
 			</div>
 		</div>
-
-		<!-- Adicione os scripts do Bootstrap e da jQuery Mask -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+		
 		<script>
 			$(document).ready(function() {
 				$('#cpf').mask('000.000.000-00');
 				$('#telefone').mask('(00) 0000-00009'); // Adiciona a máscara de telefone, o "9" opcional indica que o nono dígito é opcional
 				$('#cep').mask('00000-000');
-
-				$('#btnBuscaCEP').click(function() {
-					var cep = $('#cep').val().replace(/\D/g, ''); // Remove caracteres não numéricos
-
-					if (cep.length === 8) {
-						$.ajax({
-							url: 'https://viacep.com.br/ws/' + cep + '/json/',
-							dataType: 'json',
-							success: function(data) {
-								if (!data.erro) {
-									$('#rua').val(data.logradouro);
-									$('#bairro').val(data.bairro);
-									// Adicione outros campos de endereço, se necessário
-								} else {
-									alert('CEP não encontrado.');
-								}
-							},
-							error: function() {
-								alert('Erro ao buscar o CEP.');
-							}
-						});
-					}
-				});
-			});
 		</script>
 
 	</body>

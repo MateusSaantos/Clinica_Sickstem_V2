@@ -10,8 +10,11 @@
    
    ?>
    
-    <!-- Graphic Area -->
-    <?php include "conexao.php"; ?>
+ <?php 
+	/* Conexão com banco de dados */
+	include __DIR__ . '/../../src/conec/conexao.php';
+  
+	?>
     <!-- Gráfico de Colunas -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
