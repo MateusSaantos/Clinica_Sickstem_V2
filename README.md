@@ -17,11 +17,11 @@ Veja o funcionamento detalhado da nossa aplicação através do vídeo de aprese
 
 ## 📐 Diagrama Conceitual ER:
 
-![Diagrama ER](Sickstem/img/ER-SICKSTEM.png)
+![Diagrama ER](docs/img/ER-SICKSTEM.png)
 
 ## 🧮 Modelo Lógico:
 
-![Modelo Lógico](Sickstem/img/Modelo-Logico.png)
+![Modelo Lógico](docs/img/Modelo-Logico.png)
 
 ## 📄 Script de Criação do Banco de Dados:
 ``` sql
@@ -193,13 +193,13 @@ Para visualizar os scripts de povoamento e os determinados requisitos do sistema
 
 ## 🖥️ Conheça nosso sistema:
 
-![Home Page](Sickstem/img/tela_inicial.png)
+![Home Page](docs/img/tela_inicial.png)
 
-![Dashboard](Sickstem/img/tela_dashboard.png)
+![Dashboard](docs/img/tela_dashboard.png)
 
-![Tela de Login](Sickstem/img/tela_login.png)
+![Tela de Login](docs/img/tela_login.png)
 
-![Tela de Cadastro Agente](Sickstem/img/tela_cadastro.png)
+![Tela de Cadastro Agente](docs/img/tela_cadastro.png)
 
 ## ✍️ Autores:
 
