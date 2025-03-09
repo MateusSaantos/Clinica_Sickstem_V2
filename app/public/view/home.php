@@ -11,7 +11,7 @@
 <!-- Slides --> 
 <section class="slider">
    <div class="hero-slider">
-      <div class="single-slider" style="background-image:url('img/slider2.png')">
+      <div class="single-slider" style="background-image:url('/sickstem/app/public/img/slider2.png')">
          <div class="container">
             <div class="row">
                <div class="col-lg-7">
@@ -22,7 +22,7 @@
             </div>
          </div>
       </div>
-      <div class="single-slider" style="background-image:url('img/slider.jpg')">
+      <div class="single-slider" style="background-image:url('/sickstem/app/public/img/slider.jpg')">
          <div class="container">
             <div class="row">
                <div class="col-lg-7">
@@ -33,7 +33,7 @@
             </div>
          </div>
       </div>
-      <div class="single-slider" style="background-image:url('img/slide3.png')">
+      <div class="single-slider" style="background-image:url('/sickstem/app/public/img/slide3.png')">
          <div class="container">
             <div class="row">
                <div class="col-lg-7">
@@ -53,7 +53,7 @@
          <div class="col-lg-12">
             <div class="section-title">
                <h2><br>Como funciona o SICKSTEM?</h2>
-               <img src="img/section-img.png" alt="#">
+               <img src="/sickstem/app/public/img/section-img.png" alt="#">
                <p>Aqui você consegue monitorar os niveis de incidencia de doenças em sua região.</p>
                <h3><br>Coleta de Dados</h3>
             </div>
@@ -97,7 +97,7 @@
          <div class="col-lg-12">
             <div class="section-title">
                <h2>Saiba um pouco mais sobre o SICKSTEM!</h2>
-               <img src="img/section-img.png" alt="#">
+               <img src="/sickstem/app/public/img/section-img.png" alt="#">
             </div>
          </div>
       </div>
@@ -137,7 +137,7 @@
                   </div>
                   <style>
                      .new-background {
-                     background-image: url('img/video-bg.png');
+                     background-image: url('/sickstem/app/public/img/video-bg.png');
                      }
                   </style>
                   <a href="https://www.youtube.com/watch?v=vfoLfGNhJiM" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
@@ -154,7 +154,7 @@
          <div class="col-lg-12">
             <div class="section-title">
                <h2>Detalhes de nossas principais funcionalidades</h2>
-               <img src="img/section-img.png" alt="#">
+               <img src="/sickstem/app/public/img/section-img.png" alt="#">
             </div>
          </div>
       </div>
@@ -211,7 +211,7 @@
          <div class="col-lg-12">
             <div class="section-title">
                <h2>Funcionamento do Sistema SICKSTEM</h2>
-               <img src="img/section-img.png" alt="#">
+               <img src="/sickstem/app/public/img/section-img.png" alt="#">
                <p>Confira um pouco do nosso sistema:</p>
             </div>
          </div>
@@ -222,35 +222,35 @@
          <div class="col-lg-12 col-12">
             <div class="owl-carousel portfolio-slider">
                <div class="single-pf">
-                  <img src="img/tela_dashboard.png" alt="#">
+                  <img src="/sickstem/app/public/img/tela_dashboard.png" alt="#">
                   <a href="portfolio-details.html" class="btn">View Details</a>
                </div>
                <div class="single-pf">
-                  <img src="img/tela_login.png" alt="#">
+                  <img src="/sickstem/app/public/img/tela_login.png" alt="#">
                   <a href="portfolio-details.html" class="btn">View Details</a>
                </div>
                <div class="single-pf">
-                  <img src="img/tela_pesquisa.png" alt="#">
+                  <img src="/sickstem/app/public/img/tela_pesquisa.png" alt="#">
                   <a href="portfolio-details.html" class="btn">View Details</a>
                </div>
                <div class="single-pf">
-                  <img src="img/tela_cadastro.png" alt="#">
+                  <img src="/sickstem/app/public/img/tela_cadastro.png" alt="#">
                   <a href="portfolio-details.html" class="btn">View Details</a>
                </div>
                <div class="single-pf">
-                  <img src="img/tela_cadastro2.png" alt="#">
+                  <img src="/sickstem/app/public/img/tela_cadastro2.png" alt="#">
                   <a href="portfolio-details.html" class="btn">View Details</a>
                </div>
                <div class="single-pf">
-                  <img src="img/tela_dashboard.png" alt="#">
+                  <img src="/sickstem/app/public/img/tela_dashboard.png" alt="#">
                   <a href="portfolio-details.html" class="btn">View Details</a>
                </div>
                <div class="single-pf">
-                  <img src="img/tela_pesquisa.png" alt="#">
+                  <img src="/sickstem/app/public/img/tela_pesquisa.png" alt="#">
                   <a href="portfolio-details.html" class="btn">View Details</a>
                </div>
                <div class="single-pf">
-                  <img src="img/tela_login.png" alt="#">
+                  <img src="/sickstem/app/public/img/tela_login.png" alt="#">
                   <a href="portfolio-details.html" class="btn">View Details</a>
                </div>
             </div>
@@ -258,6 +258,7 @@
       </div>
    </div>
 </section>
+
 <?php
    /* Rodape */
    require_once __DIR__ . '/rodape/rodape.php';

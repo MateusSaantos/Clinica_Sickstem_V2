@@ -1,7 +1,7 @@
 <?php
     $server = 'localhost';
     $user = 'root';
-    $pass = 'devmysql24';
+    $pass = '';
     $bd = 'controle_doencas_bairro';
 
     if ($conn = mysqli_connect($server, $user, $pass, $bd)){
