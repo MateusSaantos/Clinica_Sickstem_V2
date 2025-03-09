@@ -55,7 +55,7 @@
 						</div>
 						<div class="col-lg-2 col-12">
 							<div class="get-quote">
-								<a href="selecao_login.php" class="btn">Login</a>
+								<a href="view/selecao_login.php" class="btn">Login</a>
 							</div>
 						</div>
 					</div>

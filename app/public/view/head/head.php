@@ -14,33 +14,24 @@
 	<title>SICKSTEM - Tenha o registro de doenças de sua região.</title>
 
 	<!-- Favicon -->
-	<link rel="icon" href="img/favicon.png">
+	<link rel="icon" href="<?= '/sickstem/app/public/img/favicon.png'; ?>">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Nice Select CSS -->
-	<link rel="stylesheet" href="css/nice-select.css">
-	<!-- Font Awesome CSS -->
-	
-	<!-- icofont CSS -->
-	<link rel="stylesheet" href="css/icofont.css">
-	<!-- Slicknav -->
-	<link rel="stylesheet" href="css/slicknav.min.css">
-	<!-- Owl Carousel CSS -->
-	<link rel="stylesheet" href="css/owl-carousel.css">
-	<!-- Datepicker CSS -->
-	<link rel="stylesheet" href="css/datepicker.css">
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="css/animate.min.css">
-	<!-- Magnific Popup CSS -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Caminho relativo para os arquivos CSS -->
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/bootstrap.min.css'; ?>">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/nice-select.css'; ?>">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/icofont.css'; ?>">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/slicknav.min.css'; ?>">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/owl-carousel.css'; ?>">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/datepicker.css'; ?>">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/animate.min.css'; ?>">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/magnific-popup.css'; ?>">
 
 	<!-- Medipro CSS -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/normalize.css'; ?>">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/style.css'; ?>">
+	<link rel="stylesheet" href="<?= '/sickstem/app/public/css/responsive.css'; ?>">
 
 </head>
