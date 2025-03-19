@@ -18,7 +18,7 @@ require_once __DIR__ . '/menu/menu.php';
 				<div class="col-lg-12">
 					<div class="section-title">
 						<h2>Escolha seu perfil para fazer login</h2>
-						<img src="img/section-img.png" alt="#">
+						<img src="/sickstem/app/public/img/section-img.png" alt="#">
 					</div>
 				</div>
 			</div>

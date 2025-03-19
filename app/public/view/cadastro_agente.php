@@ -29,7 +29,7 @@ require_once __DIR__ . '/head/head.php';
 					<div class="row align-items-center">
 						<div class="header-text mb-4 ">
 							<h2>Cadastro de Agente</h2><br>
-							<form method="post" action="processa_cadastro_agente.php">
+							<form method="post" action="/sickstem/app/src/controller/agente/create_agente.php">
 								<div class="form-row">
 									<div class="form-group">
 										<label for="cpf">CPF:</label>

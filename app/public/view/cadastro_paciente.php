@@ -89,14 +89,6 @@ require_once __DIR__ . '/head/head.php';
 				</div>
 			</div>
 		</div>
-		
-		<script>
-			$(document).ready(function() {
-				$('#cpf').mask('000.000.000-00');
-				$('#telefone').mask('(00) 0000-00009'); // Adiciona a máscara de telefone, o "9" opcional indica que o nono dígito é opcional
-				$('#cep').mask('00000-000');
-		</script>
-
 	</body>
 
 </html>

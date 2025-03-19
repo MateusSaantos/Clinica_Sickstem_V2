@@ -8,7 +8,7 @@ require_once __DIR__ . '/head/head.php';
 
     $pesquisa = $_POST['busca'] ?? '';
 
-    include "conexao.php";
+    include __DIR__ . '/../../src/conec/conexao.php';
 
     $sql = "SELECT * FROM agente WHERE Nome LIKE '%$pesquisa%' OR CPF LIKE '%$pesquisa%'";
 

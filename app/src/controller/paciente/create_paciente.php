@@ -1,5 +1,18 @@
 <?php
 
+/* Includes e Head */
+require_once __DIR__ . '/../../../public/view/head/head.php';
+
+?>
+
+<?php
+   /* Menu de opções internas */
+   require_once __DIR__ . '/../../../public/view/menu/menu_options.php';
+   
+?>
+
+<?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     include __DIR__ . '/../../conec/conexao.php';
@@ -29,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<a href="pagina_inicial.php" class="text-white btn btn-primary">Voltar</a>
+			<a href="/sickstem/app/public/view/pesquisa_paciente.php" class="text-white btn btn-primary">Voltar</a>
 		</div>
 	</div>
 </div>
