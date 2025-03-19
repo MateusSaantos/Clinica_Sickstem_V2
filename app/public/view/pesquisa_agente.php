@@ -82,7 +82,7 @@ require_once __DIR__ . '/head/head.php';
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="excluirAgente_script.php" method="POST">
+                    <form action="/sickstem/app/src/controller/agente/delete_agente.php" method="POST">
                         <p>Deseja realmente excluir <b id="nome_pessoa">Nome da pessoa</b>?</p>
                         <input type="hidden" name="Nome" id="nome_pessoa_1" value="">
                         <input type="hidden" name="CPF" id="CPF" value="">

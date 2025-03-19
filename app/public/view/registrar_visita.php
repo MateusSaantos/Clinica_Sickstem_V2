@@ -34,7 +34,7 @@ require_once __DIR__ . '/head/head.php';
                                     <label for="paciente">Paciente:</label>
                                     <select class="form-control" id="paciente" name="paciente" required>
                                         <?php
-                                        include "conexao.php";
+                                        include __DIR__ . '/../../src/conec/conexao.php';
 
                                         $consultaPacientes = "SELECT CPF, Nome FROM paciente";
                                         $resultPacientes = mysqli_query($conn, $consultaPacientes);
