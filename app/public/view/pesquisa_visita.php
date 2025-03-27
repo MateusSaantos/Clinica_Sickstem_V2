@@ -6,7 +6,7 @@ require_once __DIR__ . '/head/head.php';
 ?>
 
     <?php
-    include "conexao.php";
+    include __DIR__ . '/../../src/conec/conexao.php';
 	
 	$pesquisa = $_POST['busca'] ?? '';
 

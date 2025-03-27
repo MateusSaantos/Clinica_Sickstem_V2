@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<a href="pagina_inicial.php" class="text-white btn btn-primary">Voltar</a>
+			<a href="/sickstem/app/public/view/pesquisa_visita.php" class="text-white btn btn-primary">Voltar</a>
 		</div>
 	</div>
 </div>

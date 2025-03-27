@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+    include __DIR__ . '/../../conec/conexao.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
@@ -23,4 +23,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
-<a href="pagina_inicial.php" class="btn btn-primary">Voltar</a>
+<a href="/sickstem/app/public/view/pesquisa_doenca.php" class="btn btn-primary">Voltar</a>

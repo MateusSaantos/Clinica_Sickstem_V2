@@ -28,7 +28,7 @@ require_once __DIR__ . '/head/head.php';
                 <div class="row align-items-center">
                     <div class="header-text mb-4 ">
                         <h2>Registrar Visita</h2><br>
-                        <form method="post" action="processa_cadastro_visita.php">
+                        <form method="post" action="/sickstem/app/src/controller/visita/create_visita.php">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="paciente">Paciente:</label>
@@ -124,8 +124,6 @@ require_once __DIR__ . '/head/head.php';
         });
     </script>
     </div>
-
-    <!-- Rodapé, scripts, etc. aqui... -->
 
 </body>
 

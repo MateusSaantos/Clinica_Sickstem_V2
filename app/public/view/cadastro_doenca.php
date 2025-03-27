@@ -2,7 +2,7 @@
 // Conectar ao banco de dados (substitua com suas próprias credenciais)
 function conectarBancoDados()
 {
-	include('conexao.php');
+    include __DIR__ . '/../../src/conec/conexao.php';
 
 	// Obter dados do formulário
 	$nome = mysqli_real_escape_string($conn, $_POST['nome']);
