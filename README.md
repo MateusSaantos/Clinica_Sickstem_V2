@@ -9,12 +9,6 @@ bairros, apresentando essas informações por meio de gráficos. O sistema armaz
 dados de agentes de saúde, médicos, pacientes, consultas, visitas e tipos de doenças 
 para fornecer uma visão abrangente do panorama de saúde da comunidade.
 
-## 🎬 Aplicação Completa:
-
-Veja o funcionamento detalhado da nossa aplicação através do vídeo de apresentação:
-
-[![YouTube](https://img.shields.io/badge/-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/Mol5lUpjkZQ)
-
 ## 📐 Diagrama Conceitual ER:
 
 ![Diagrama ER](docs/img/ER-SICKSTEM.png)
@@ -200,17 +194,6 @@ Para visualizar os scripts de povoamento e os determinados requisitos do sistema
 ![Tela de Login](docs/img/tela_login.png)
 
 ![Tela de Cadastro Agente](docs/img/tela_cadastro.png)
-
-## ✍️ Autores:
-
- - [Mateus Henrique dos Santos](https://github.com/MateusSaantos)
- - [Emanuelle Ferraz Lima](https://github.com/emanuelleferraz)
- - [Esdras Almeida Ávila](https://github.com/Ezra2323)
-
-## 📲 Contato:
-- mateus_saantos@outlook.com
-- emanuelle.ferrazlm@gmail.com
-- acaavila@gmail.com
 
 
 
