@@ -27,7 +27,7 @@ require_once __DIR__ . '/head/head.php';
                 <div class="row align-items-center">
                     <div class="header-text mb-4 ">
                         <h2>Registrar Consulta</h2><br>
-                        <form method="post" action="processa_cadastro_consulta.php">
+                        <form method="post" action="/sickstem/app/src/controller/consulta/create_consulta.php">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="codigo">Código:</label>
@@ -39,7 +39,7 @@ require_once __DIR__ . '/head/head.php';
                                     <label for="paciente">Paciente:</label>
                                     <select class="form-control" id="paciente" name="paciente" required>
                                         <?php
-                                        include "conexao.php";
+										include __DIR__ . '/../../src/conec/conexao.php';
 
                                         $consultaPacientes = "SELECT CPF, Nome FROM paciente";
                                         $resultPacientes = mysqli_query($conn, $consultaPacientes);
@@ -106,7 +106,7 @@ require_once __DIR__ . '/head/head.php';
             <!-- Caixa da Direita -->
             <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #4169E1;">
                 <div class="featured-image mb-3">
-                    <img src="img/consulta.png" class="img-fluid" style="width: 250px;">
+                    <img src="/sickstem/app/public/img/consulta.png" class="img-fluid" style="width: 250px;">
                 </div>
                 <p class="text-white fs-2 mb-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Registre as consultas!</p>
                 <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Realize o registro das consultas feitas com seus pacientes.</small>

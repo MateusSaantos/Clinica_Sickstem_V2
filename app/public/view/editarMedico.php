@@ -1,121 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Site keywords here">
-    <meta name="description" content="">
-    <meta name='copyright' content=''>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	/* Includes e Head */
+	require_once __DIR__ . '/head/head.php';
 
-    <!-- Title -->
-    <title>SICKSTEM - Alterar Cadastro</title>
+	?>
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<?php
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="css/nice-select.css">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- icofont CSS -->
-    <link rel="stylesheet" href="css/icofont.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" href="css/slicknav.min.css">
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="css/owl-carousel.css">
-    <!-- Datepicker CSS -->
-    <link rel="stylesheet" href="css/datepicker.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.min.css">
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!-- Medipro CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>Sickstem</title>
-</head>
-
-<body>
-
-    <!-- Header Area -->
-    <header class="header shadow-sm mb-3">
-        <!-- Header Inner -->
-        <div class="header-inner">
-            <div class="container">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-12">
-                            <!-- Start Logo -->
-                            <div class="logo">
-                                <a href="pagina_inicial.php"><img src="img/logo.png" alt="#"></a>
-                            </div>
-                            <!-- End Logo -->
-                            <!-- Mobile Nav -->
-                            <div class="mobile-nav"></div>
-                            <!-- End Mobile Nav -->
-                        </div>
-                        <div class="col-lg-7 col-md-9 col-12">
-                            <!-- Main Menu -->
-                            <div class="main-menu">
-                                <nav class="navigation">
-                                    <ul class="nav menu">
-                                        <li><a href="#">Pacientes <i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="pesquisa_paciente.php">Listar</a></li>
-                                                <li><a href="cadastro_paciente.php">Cadastrar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Agentes <i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="pesquisa_agente.php">Listar</a></li>
-                                                <li><a href="cadastro_agente.php">Cadastrar</a></li>
-                                                <li><a href="registrar_visita.php">Registrar Visita</a></li>
-                                                <li><a href="pesquisa_visita.php">Listar Visita</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Doenças <i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="pesquisa_doenca.php">Listar</a></li>
-                                                <li><a href="cadastro_doenca.php">Cadastrar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Médicos <i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="pesquisa_medico.php">Listar</a></li>
-                                                <li><a href="cadastro_medico.php">Cadastrar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Consultas <i class="icofont-rounded-down"></i></a>
-                                            <ul class="dropdown">
-                                                <li><a href="pesquisa_consulta.php">Listar</a></li>
-                                                <li><a href="registrar_consulta.php">Registrar</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <!--/ End Main Menu -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/ End Header Inner -->
-    </header>
-    <!-- End Header Area -->
+   /* Menu de opções internas */
+   require_once __DIR__ . '/menu/menu_options.php';
+   
+   ?>
 
     <?php
-    include "conexao.php";
+
+    include __DIR__ . '/../../src/conec/conexao.php';
     $crm = $_GET['id'] ?? '';
     $sql = "SELECT * FROM medico WHERE CRM = '$crm'";
 
@@ -141,7 +41,7 @@
                 <div class="row align-items-center">
                     <div class="header-text mb-4 ">
                         <h2>Cadastro de Medico</h2><br>
-                        <form method="post" action="editarMedico_script.php">
+                        <form method="post" action="/sickstem/app/src/controller/medico/update_medico.php">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="crm">CRM:</label>
@@ -172,7 +72,7 @@
             <!-- Caixa da Direita -->
             <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #4169E1;">
                 <div class="featured-image mb-3">
-                    <img src="img/medico.png" class="img-fluid" style="width: 250px;">
+                    <img src="/sickstem/app/public/img/medico.png" class="img-fluid" style="width: 250px;">
                 </div>
                 <p class="text-white fs-2 mb-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Médico</p>
                 <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Identifique as doenças da sua cidade. Saúde em primeiro lugar!</small>
