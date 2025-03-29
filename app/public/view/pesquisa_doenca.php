@@ -89,7 +89,7 @@ require_once __DIR__ . '/head/head.php';
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="excluir_doenca.php" method="POST">
+                    <form action="/sickstem/app/src/controller/doenca/delete_doenca.php" method="POST">
                         <p>Deseja realmente excluir <b id="nome_pessoa"> </b>?</p>
                         <input type=hidden name="nome" id="nome_pessoa1" value="<?= $nome ?>">
                         <div class="modal-footer">

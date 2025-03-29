@@ -1,7 +1,7 @@
 <?php
 // Verificar se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include "conexao.php";
+    include __DIR__ . '/../../conec/conexao.php';
     
     // Receber o valor do campo Nome
     $nome = $_POST["nome"];
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             // Redirecionar para a página pesquisa_doenca.php após a exclusão
-            header("Location: pesquisa_doenca.php");
+            header("Location: /sickstem/app/public/view/pesquisa_doenca.php");
             exit(); // Importante: garantir que o script seja encerrado após o redirecionamento
         } else {
             echo "Erro ao excluir doença: " . $stmt->error;

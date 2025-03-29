@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->execute()) {
         // Redireciona para a página de pesquisa_doenca.php após a edição bem-sucedida
-        header("Location: pesquisa_doenca.php");
+        header("Location: /sickstem/app/public/view/pesquisa_doenca.php");
         exit(); // Certifique-se de sair após o redirecionamento para evitar execução adicional de código
     } else {
         echo "Erro ao editar a doença: " . $stmt->error;
