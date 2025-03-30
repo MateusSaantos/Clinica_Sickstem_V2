@@ -30,10 +30,10 @@
                      <div class="main-menu">
                         <nav class="navigation">
                            <ul class="nav menu">
-                              <li class=""><a href="/sickstem/app/public/home.php">Pagina Inicial</a></li>
-                              <li><a href="#como_funciona">Como Funciona? </a></li>
-                              <li><a href="#">Sobre o SICKSTEM </a></li>
-                              <li><a href="contact.html">Quem Somos</a></li>
+                              <li class=""><a href="">Pagina Inicial</a></li>
+                              <li><a href="">Como Funciona? </a></li>
+                              <li><a href="">Sobre o SICKSTEM </a></li>
+                              <li><a href="">Quem Somos</a></li>
                            </ul>
                         </nav>
                      </div>
